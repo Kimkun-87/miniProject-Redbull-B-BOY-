@@ -1,0 +1,157 @@
+form{
+    position: relative;
+    left: 25%;
+    margin-top: 2%;
+    display: block;
+    width: 900px;
+    height: 400px;
+    border: 1px solid wheat;
+    background-color: black;
+}
+
+/*댓글쓰기*/
+.box_comment_write{
+    position: relative;
+}
+
+.box_comment_write::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box_comment_write .form_guest{
+    margin: 0 -4px;
+}
+
+.box_comment_write .form_guest::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box_comment_write .box_inp{
+    float: left;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.box_comment_write .box_inp:nth-child(-n+2){
+    width: 50%;
+}
+
+.box_comment_write .box_inp .inner_inp{
+    margin: 0 4px;
+    padding: 9px 10px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.box_comment_write .inp_comment, .box_comment_write .form_secret input, .box_comment_write .register_area textarea{
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.33;
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    background-color: black;
+}
+
+.box_comment_write .inp_comment{
+    width: 100%;
+}
+
+.box_comment_write .register_area .btn_register{
+    float: right;
+    margin-right: 1%;
+    width: 105px;
+    height: 36px;
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 2.1;
+    background-color: #f25555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.box_comment_write .register_area .btn_register:hover{
+    background: #777777;
+}
+
+.box_comment_write .form_secret {
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+}
+
+/*비밀 체크박스 */
+.box_comment_write .form_secret input{
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 13px;
+    height: 13px;
+}
+
+/*비밀글 글씨와 체크박스 간격*/
+.box_comment_write .form_secret .label_secret{
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1;
+    vertical-align: top;
+}
+
+.box_comment_write .form_secret .label_secret:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.box_comment_write .form_secret .icon-check{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 1px;
+}
+
+.box_comment_write .form_secret input:checked+label .icon-check{
+    display: block;
+}
+
+.box_comment_write .register_area #userMessage {
+    width: 98%;
+    margin-left: 1%;
+    height: 150px;
+    padding: 9px 10px;
+    font-size: 15px;
+    line-height: 1.33;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    vertical-align: top;
+    background-color: transparent;
+}
+
+.box_comment_write .form_secret label{
+    color: white;
+}
+
+#bg{
+    position: fixed;   
+    top: 11%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/redbull/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: ;
+}

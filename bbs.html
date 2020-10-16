@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Redbull BC All Star Bboy Team</title>
+    <link rel="stylesheet" type="text/css" href="css/first.css">
+    <link rel="stylesheet" type="text/css" href="css/bbs.css">
+</head>
+<body>
+    <header>
+        <div class="navibar">
+            <h1><a href="main.html">Logo</a></h1>
+            <h3><a href="main.html">Redbull B-boy AllStar Team</a></h3>
+            <nav>
+                <ul class="menu">
+                    <li><a href="all_stars.html" class="click"><span>Member</span></a></li>
+                    <li><a href="movie.html" class="click"><span>Movie</span></a></li>
+                    <li><a href="ranking.html" class="click"><span>Ranking</span></a></li>
+                    <li><a href="bbs.html" class="click"><span>BBS</span></a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="log">
+                    <li><a href="login_page.html">Login</a></li>
+                    <li><a href="signup.html">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!---------   BBS main pages------->
+    <section>
+        <article>
+            <form method="post" action="php/insert_result.php">
+                <div class="box_comment_write">
+                <!----register area-->
+                    <div class="register_area">
+                        <!--form guest-->
+                        <div class="form_guest">
+                            <!--name-->
+                            <div class="box_inp">
+                                <div class="inner_inp">
+                                    <input type="text" name="username" title="이름" placeholder="이름" 
+                                    class="inp_comment inp_name">
+                                </div>
+                            </div>
+                            <!---pw-->
+                            <div class="box_inp">
+                                <div class="inner_inp">
+                                    <input type="text" name="eMailp" title = "이메일" maxlength="20" placeholder="이메일 주소"
+                                    class="inp_comment inp_password">
+                                </div>
+                            </div>
+                            <!--//form guest-->
+                            <!--form_cont-->
+                            <div class="form_cont">
+                                <input type="text" name="userMessage" id="userMessage" placeholder="댓글을 입력해주세요.">
+                            </div>
+                            <!--button-form-->
+                            <input type="submit" class="btn_register" value = "댓글남기기"> 
+                            <a href="php/reply.php"></a> 
+                        </div>
+                        <!--//register area-->
+                    </div>
+                </div>     
+                <!---------------------- reply page ---------------------------->
+                <form method="get" action="php/reply.php"></form>
+            </form>
+
+       
+                
+        </article>
+    </section>
+    <div id="bg"></div>
+</body>
+</html>

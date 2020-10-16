@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+header{
+    position: relative;
+    background-color: #001e3c;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+header h1{ /*로고*/
+    position: absolute;
+    left: 2%;
+    top: 20%;
+}
+header h1 a{
+    width: 250px;
+    height: 100px;
+    display: block;
+    color: transparent;
+    background-image: url("../images/redbull/red-bull-logo-3.png");
+    background-size: 210px 50px;
+    background-repeat: no-repeat;
+}
+header h3 a{
+    background: linear-gradient(to right, #d2003c, #f7d00a); /*text 오른쪽 방향으로 그라데이션 */
+    -webkit-background-clip: text; /*텍스트에 채우기 */
+    -webkit-text-fill-color: transparent; /*텍스트 배경 날리기 */
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header nav .menu li{
+    display: inline-block;
+    padding: 0 70px;
+    margin-top : 3%;
+}
+header nav .menu li a{ /*메인 메뉴에 마우스 올리면 컬러 변화 이전 요소*/
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+header nav .menu li a:hover{ /*메인 메뉴에 마우스 올리면 컬러 변화*/
+    background: linear-gradient(to right, #d2003c, #f7d00a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.click:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+.click:hover:after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
+header .log{
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+header .log li{
+    float: left;
+    position: relative;
+    list-style-type: none;
+}
+
+header .log li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+
+/*------------------------ Member profile style----------*/
+section{
+    position: relative;
+}
+section article img{
+    position: relative;
+    margin: 2% auto;
+    left: 2%;
+}
+section article .main{
+    margin: 2% 1%;
+}
+section article .sub{
+    margin: 2% 7%;
+}
+
+section article h2{
+    color: white;
+    border-bottom: 1px solid white;
+    width: 500px;
+    padding: 20px 0;
+    margin-left: 3%;
+    text-align: center;
+}
+section article .line{
+    padding: 20px 0;
+    color: white;
+    text-align: left;
+    margin-left: 3%;
+    border-bottom: 1px solid white;
+    width: 500px;
+}
+
+
+/*------------------------------- 수상경력 ----------------*/
+
+section article .container{
+    position: absolute;
+    display: flex;
+    left: 35%;
+    top: 43%;
+    background-color: transparent;
+}
+section article .container div{
+    width: 400px;
+    border: 1px solid transparent;
+    background: transparent;
+    color: white;
+    padding: 50px;
+}
+
+section article .award{
+    position: absolute;
+    padding: 20px 0;
+    color: white;
+    left: 35%;
+    top: 39%;
+    border-bottom: 1px solid white;
+    width: 1000px;
+}
+
+section article mark{
+    background-color: rgb(227, 247, 175);
+    font-weight: bold;
+}

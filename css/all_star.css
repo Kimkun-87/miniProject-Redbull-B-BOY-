@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("../images/redbull/subbg.jpg");
+}
+header{
+    position: relative;
+    background-color: #001e3c;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+header h1{ /*로고*/
+    position: absolute;
+    left: 2%;
+    top: 20%;
+}
+header h1 a{
+    width: 250px;
+    height: 100px;
+    display: block;
+    color: transparent;
+    background-image: url("../images/redbull/red-bull-logo-3.png");
+    background-size: 210px 50px;
+    background-repeat: no-repeat;
+}
+header h3 a{
+    background: linear-gradient(to right, #d2003c, #f7d00a); /*text 오른쪽 방향으로 그라데이션 */
+    -webkit-background-clip: text; /*텍스트에 채우기 */
+    -webkit-text-fill-color: transparent; /*텍스트 배경 날리기 */
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+header nav .menu li{
+    display: inline-block;
+    padding: 0 70px;
+    margin-top : 3%;
+}
+header nav .menu li a{ /*메인 메뉴에 마우스 올리면 컬러 변화 이전 요소*/
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+header nav .menu li a:hover{ /*메인 메뉴에 마우스 올리면 컬러 변화*/
+    background: linear-gradient(to right, #d2003c, #f7d00a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.click:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+}
+.click:hover:after{
+    width: 100%;
+    transition: width .3s;
+}
+
+
+header .log{
+    position: absolute;
+    right: 45px;
+    top: 0;
+}
+
+header .log li{
+    float: left;
+    position: relative;
+    list-style-type: none;
+}
+
+header .log li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0 20px;
+}
+
+
+/*--------------------- section style----------------------------*/
+
+/*--.first_list{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.first_list .caption{
+    position: absolute;
+    padding-top: 20px;
+    background: rgba(0,0,0,0.6);
+    width: 352px;
+    height: 200px;
+    top: 450px;
+    border-bottom: 1px solid transparent;
+    border-radius: 0, 10px ;
+    opacity: 0;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+}
+
+.first_list li:hover .caption{
+    opacity: 1;
+    -moz-transform: translateY(-299px);
+    -o-transform: translateY(-299px);
+    -webkit-transform: translateY(-299px);
+    transform: translateY(-299px);
+}
+*/
+.container{
+    margin-top: 3%;
+}
+.first_list{
+    margin: 0;
+    padding: 0;
+}
+.first_list li{
+    position: relative;
+    float: left;
+    padding: 0;
+    margin: 10px;
+    overflow: hidden;
+}
+.first_list img{
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 5;
+}
+
+.first_list .caption{
+    position: absolute;
+    top: 350px;
+    width: 352px;
+    height: 200px;
+    padding-top: 20px;
+    background: rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 10;
+}
+
+.first_list li:hover .caption{
+    opacity: 1;
+    transform: translateY(-199px);
+}
+/*--------------- member img transform scale --------------*/
+.first_list .hong img,.first_list .wing img,.first_list .issei img,.first_list .jr img,.first_list .lg img
+.first_list .lz img,.first_list .meno img,.first_list .negu img,.first_list .sing img,.first_list .tai img{
+    margin: 0;
+    padding: 0;
+    float: left;
+    z-index: 5;
+    transition: transform 0.4s ease-in;
+}
+.first_list .hong:hover img,.first_list .wing:hover img,.first_list .issei:hover img,.first_list .jr:hover img
+,.first_list .lg:hover img,.first_list .lz:hover img,.first_list .meno:hover img,.first_list .negu:hover img
+,.first_list .sing:hover img,.first_list .tai:hover img {
+    transform: scale(1.4);
+}
+
+
+
+
+/*-------------------------------------------------------------*/
+
+
+.first_list .caption p{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.first_list .caption a{
+    text-decoration: none;
+}
+
+/*----------------------------------members national img ------------------*/
+
+.first_list li .caption a[title|="Ja"]{
+    background: url("../images/redbull/JP@2x.png") no-repeat right center;
+    padding: 5px 25px;
+}
+.first_list li .caption a[title|="Ko"]{
+    background: url("../images/redbull/KR@2x.png") no-repeat right center;
+    padding: 5px 25px;
+}
+.first_list li .caption a[title|="Fr"]{
+    background: url("../images/redbull/FR@2x.png") no-repeat right center;
+    padding: 5px 25px;
+}
+.first_list li .caption a[title|="Ve"]{
+    background: url("../images/redbull/VE@2x.png") no-repeat right center;
+    padding: 5px 25px;
+}
+.first_list li .caption a[title|="Ne"]{
+    background: url("../images/redbull/NL@2x.png") no-repeat right center;
+    padding: 5px 25px;
+}
+.first_list li .caption a[title|="Br"]{
+    background: url("../images/redbull/BR@2x.png") no-repeat right center;
+    padding: 5px 25px;
+}
+.first_list li .caption a[title|="Be"]{
+    background: url("../images/redbull/members/moroco.png") no-repeat right center;
+    padding: 5px 25px;
+}
+.first_list li img{
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+
+
+/*-------------members name color style----------------------------------------------*/
+
+.first_list .caption h1{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(to right,#fff,#fff,#fff,#d2003c,#fff,#fff); /*text 오른쪽 방향으로 그라데이션 */
+    -webkit-background-clip: text; /*텍스트에 채우기 */
+    -webkit-text-fill-color: transparent; /*텍스트 배경 날리기 */
+}
+
+.first_list .caption .kr{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to top, #0600f8,#0600f8, #d2003c,#d2003c); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.first_list .caption .Fr{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #0600f8,#fff,#d2003c); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.first_list .caption .Vn{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to top, #d2003c,#d2003c,#0600f8,#ffcc00,#ffcc00,#ffcc00); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.first_list .caption .Nt{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to top, #0600f8,#fff,#d2003c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.first_list .caption .Be{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #d2003c,#006230,#d2003c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+.first_list .caption .Bz{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #009c3b,#ffcc00,#009c3b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+
